@@ -21,7 +21,7 @@ jobs:
         working-directory: build
         run: |
           tar -czvf UFiber.Configurator-MacOS.tar.gz macos-x64
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: success()
         with:
           name: UFiber.Configurator-MacOS.tar.gz
@@ -41,7 +41,7 @@ jobs:
         working-directory: build
         run: |
           tar -czvf UFiber.Configurator-Linux.tar.gz linux-x64
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: success()
         with:
           name: UFiber.Configurator-Linux.tar.gz
@@ -61,7 +61,7 @@ jobs:
         working-directory: build
         run: |
           tar -czvf UFiber.Configurator-Windows.zip win-x64
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: success()
         with:
           name: UFiber.Configurator-Windows.zip
