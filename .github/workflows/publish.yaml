@@ -27,7 +27,7 @@ jobs:
           name: UFiber.Configurator-MacOS.tar.gz
           path: build/UFiber.Configurator-MacOS.tar.gz
   linux:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
       - name: Setup .NET Core
